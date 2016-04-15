@@ -1,3 +1,25 @@
 html{
-	font-family: Roboto, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	position: relative;
+	min-height: 100%;
+}
+
+body{
+	font-size: 100%;
+	margin: 0 0 75px;
+}
+
+.poet{
+	border-left: 4px #e0e0e0 solid;
+	padding-left: 8px;
+	font-size:0.9em;
+}
+
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 75px;
+	width: 100%;
 }
