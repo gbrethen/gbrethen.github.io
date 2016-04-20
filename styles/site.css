@@ -38,3 +38,8 @@ span#social-media img{
 	width:35px;
 	height:35px;
 }
+
+.textwrap{
+	float: right;
+	margin: 10px;
+}
