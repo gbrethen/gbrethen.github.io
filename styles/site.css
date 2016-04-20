@@ -1,5 +1,5 @@
 html{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lora', serif;
 	font-size: 100%;
 	position: relative;
 	min-height: 100%;
@@ -22,4 +22,19 @@ footer{
 	bottom: 0;
 	height: 75px;
 	width: 100%;
+}
+
+div#section-header h3{
+	font-family: 'Lora';
+	font-weight: medium;
+	font-style: italic;
+}
+
+span#social-media{
+	margin-right:25px;
+}
+
+span#social-media img{
+	width:35px;
+	height:35px;
 }
