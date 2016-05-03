@@ -1,5 +1,5 @@
 html{
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 	position: relative;
 	min-height: 100%;
@@ -25,7 +25,7 @@ footer{
 }
 
 div#section-header h3{
-	font-family: 'Lora';
+	font-family: 'Open Sans';
 	font-weight: medium;
 	font-style: italic;
 }
