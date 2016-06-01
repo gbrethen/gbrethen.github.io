@@ -30,6 +30,8 @@ div#section-header h3{
 }
 
 span#social-media{
+	display:block;
+	margin-top:0;
 	margin-right:25px;
 }
 
