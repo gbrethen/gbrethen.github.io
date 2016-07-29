@@ -56,7 +56,6 @@ span#social-media img{
 
 #tblCB > td{
 	white-space:nowrap;
-	width: 10px;
 }
 
 .dark{

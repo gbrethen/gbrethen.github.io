@@ -103,7 +103,7 @@
 								<div class="card-content">
 									<span class="card-title">Javascript Sample</span>
 									<p>
-										This sample is pure <b>Javascript</b>.  A simple call to a function that returns an html string generated using javascript to build a checkerboard.
+										This is my simple Python sample that was built using <b>Python</b> and <b>Tornado</b> web server.  This sample reads a json file in and parses through the data, builds the output string and sends the response back to the browser.
 									</p>
 								</div>
 							</div>
