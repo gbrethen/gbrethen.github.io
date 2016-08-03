@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ef9e9f-2a9b-45de-a828-daf0d5a528ea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/ruby-anagram-app-lg.PNG" afterPath="$PROJECT_DIR$/images/ruby-anagram-app-lg.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/site.css" afterPath="$PROJECT_DIR$/styles/site.css" />
     </list>
     <ignored path="gbrethen.github.io.iws" />
@@ -28,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="site.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            <state relative-caret-position="370">
+              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -70,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -98,10 +95,10 @@
       <list>
         <option value="$PROJECT_DIR$/xml/portfolio.xml" />
         <option value="$PROJECT_DIR$/styles/gallery.css" />
-        <option value="$PROJECT_DIR$/styles/site.css" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/loadPortfolio.js" />
+        <option value="$PROJECT_DIR$/styles/site.css" />
       </list>
     </option>
   </component>
@@ -280,12 +277,12 @@
       <workItem from="1469893743137" duration="1791000" />
       <workItem from="1470100262375" duration="72000" />
       <workItem from="1470234062026" duration="14000" />
-      <workItem from="1470234137284" duration="3702000" />
+      <workItem from="1470234137284" duration="4144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5579000" />
+    <option name="totallyTimeSpent" value="6021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="61" width="1474" height="814" extended-state="0" />
@@ -349,14 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/preLoadImages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -407,6 +396,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
           <folding />
         </state>
       </provider>
