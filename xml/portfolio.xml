@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<features>
+    <feature>
+        <image>ruby-anagram-app-lg.PNG</image>
+        <caption>Ruby, Sinatra and Postgresql</caption>
+        <header>My Anagram App</header>
+    </feature>
+    <feature>
+        <image>python-code-lg.png</image>
+        <caption>Python and Tornado Web Server.</caption>
+        <header>Python Sample</header>
+    </feature>
+</features>

@@ -62,3 +62,19 @@ span#social-media img{
 .dark{
 	background-color: #ccc;
 }
+
+div#right
+{
+	width:600px;
+	text-align:center;
+	margin:0 auto;
+}
+
+div#right hr
+{
+	width:80%;
+	height:5px;
+	margin:0 auto;
+	background:url("../images/hr_gradient.png") no-repeat;
+	border:0;
+}
