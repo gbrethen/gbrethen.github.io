@@ -1,5 +1,12 @@
-$(function() {
+function showRecaptcha(element) {
+  Recaptcha.create('6LcN6wYUAAAAAEn-pCSve532Cij4k8GxMmGrVNrn', element, {
+    theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
+    custom_theme_widget: 'recaptcha_widget'
+  });
+}
 
+$(function() {
+    showRecaptcha('recaptcha_widget');
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -11,6 +18,9 @@ $(function() {
             event.preventDefault();
             
             // get values from FORM
+            var contactFormHost = "gbrethen-contact-form.herokuapp.com",
+                form = $('#contactForm');
+                
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
@@ -21,16 +31,12 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: contactFormHost + 'send_email',
                 type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
+                data: form.serialize(),
+                dataType: 'json',
                 cache: false,
-                success: function() {
+                success: function(response) {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
