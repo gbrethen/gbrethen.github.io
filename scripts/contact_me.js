@@ -1,12 +1,5 @@
-function showRecaptcha(element) {
-  Recaptcha.create('6LcN6wYUAAAAAEn-pCSve532Cij4k8GxMmGrVNrn', element, {
-    theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
-    custom_theme_widget: 'recaptcha_widget'
-  });
-}
 
 $(function() {
-    showRecaptcha('recaptcha_widget');
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
