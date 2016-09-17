@@ -11,7 +11,7 @@ $(function() {
             event.preventDefault();
             
             // get values from FORM
-            var contactFormHost = "gbrethen-contact-form.herokuapp.com",
+            var contactFormHost = "https://gbrethen-contact-form.herokuapp.com",
                 form = $('#contactForm');
                 
             var name = $("input#name").val();
@@ -29,7 +29,7 @@ $(function() {
                 data: form.serialize(),
                 dataType: 'json',
                 cache: false,
-                success: function(response) {
+                success: function() {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
