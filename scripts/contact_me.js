@@ -11,7 +11,7 @@ $(function() {
             event.preventDefault();
             
             // get values from FORM
-            var contactFormHost = "https://gbrethen-contact-form.herokuapp.com",
+            var contactFormHost = "https://gbrethen-contact-form.herokuapp.com/",
                 form = $('#contactForm');
                 
             var name = $("input#name").val();
