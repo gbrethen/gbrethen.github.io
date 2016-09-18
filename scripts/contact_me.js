@@ -18,9 +18,8 @@ $(function() {
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
             
-            var bag = {email: $("input#email").val(), phone: $("input#phone").val(), message: $("textarea#message").val()}
+            var bag = {name: $("input#name").val(), email: $("input#email").val(), phone: $("input#phone").val(), message: $("textarea#message").val()}
             
-            alert(bag);
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -32,7 +31,8 @@ $(function() {
                 data: bag,
                 dataType: 'json',
                 cache: false,
-                success: function() {
+                success: function(result) {
+                    alert(result[0]);
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
