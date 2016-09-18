@@ -27,6 +27,7 @@ $(function() {
             }
             $.ajax({
                 url: contactFormHost + 'send_email',
+                useDefaultXhrHeader: false,
                 type: "POST",
                 data: bag,
                 dataType: 'json',
