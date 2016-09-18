@@ -11,8 +11,7 @@ $(function() {
             event.preventDefault();
             
             // get values from FORM
-            var contactFormHost = "https://gbrethen-contact-form.herokuapp.com/",
-                form = $('#contactForm');
+            var contactFormHost = "https://gbrethen-contact-form.herokuapp.com/";
                 
             var name = $("input#name").val();
             var email = $("input#email").val();
@@ -26,7 +25,7 @@ $(function() {
             $.ajax({
                 url: contactFormHost + 'send_email',
                 type: "POST",
-                data: form.serialize(),
+                data: $("#contactForm").serialize(),
                 dataType: 'json',
                 cache: false,
                 success: function() {
