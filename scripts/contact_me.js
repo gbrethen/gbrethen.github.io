@@ -33,7 +33,6 @@ $(function() {
                 dataType: 'json',
                 cache: false,
                 success: function(data) {
-                    alert(data[0]);
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
@@ -48,7 +47,6 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
                 error: function(data) {
-                    alert(data);
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
