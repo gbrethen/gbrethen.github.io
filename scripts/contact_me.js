@@ -17,6 +17,10 @@ $(function() {
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
+            
+            var bag = {email: $("input#email").val(), phone: $("input#phone").val(), message: $("textarea#message").val()}
+            
+            alert(bag);
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -25,7 +29,7 @@ $(function() {
             $.ajax({
                 url: contactFormHost + 'send_email',
                 type: "POST",
-                data: $("#contactForm").serialize(),
+                data: bag,
                 dataType: 'json',
                 cache: false,
                 success: function() {
