@@ -1,9 +1,8 @@
-//mask phone field
-jquery(function($){
-    $("#phone").mask("(999) 999.9999");
-});
-//
+
 $(function() {
+    //mask phone field
+    $("#phone").mask("(999) 999.9999");
+    
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
