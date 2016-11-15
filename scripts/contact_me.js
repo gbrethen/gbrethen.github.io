@@ -1,5 +1,8 @@
-$(function() {
 
+$(function() {
+    //mask phone field
+    $("#phone").mask("(999) 999.9999");
+    
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -11,26 +14,28 @@ $(function() {
             event.preventDefault();
             
             // get values from FORM
+            var contactFormHost = "https://gbrethen-contact-form.herokuapp.com/";
+                
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
+            
+            var bag = {name: $("input#name").val(), email: $("input#email").val(), phone: $("input#phone").val(), message: $("textarea#message").val()}
+            
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: contactFormHost + 'send_email',
+                useDefaultXhrHeader: false,
                 type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
+                data: bag,
+                dataType: 'json',
                 cache: false,
-                success: function() {
+                success: function(data) {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
@@ -44,7 +49,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-                error: function() {
+                error: function(data) {
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")

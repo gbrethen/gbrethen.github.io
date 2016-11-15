@@ -78,3 +78,38 @@ div#right hr
 	background:url("../images/hr_gradient.png") no-repeat;
 	border:0;
 }
+
+.recaptcha {
+    padding: 0;
+    display: inline-block;
+
+    div.image {
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0;
+      padding: 10px;
+      background-color: #fff;
+      width: 320px;
+
+      br {
+        display: none;
+      }
+      embed, span {
+        float: left;
+        clear: both;
+        a {
+          cursor: pointer;
+          font-size: 0.9em;
+        }
+      }
+    }
+    
+    div.headline {
+      padding: 5px 5px 0 10px;
+    }
+
+    input[type=text] {
+      margin: 10px;
+    }
+  }
+}

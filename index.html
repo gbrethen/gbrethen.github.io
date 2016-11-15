@@ -192,7 +192,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="contactForm" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -221,7 +221,8 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <br>
+                        
+                        <br/>
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
@@ -498,6 +499,7 @@
 
     <!-- jQuery -->
     <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.maskedinput.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="scripts/bootstrap.min.js"></script>
@@ -511,7 +513,7 @@
 
     <!-- Theme JavaScript -->
     <script src="scripts/freelancer.min.js"></script>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 </html>
