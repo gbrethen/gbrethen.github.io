@@ -1,563 +1,892 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Github Page of Greg Brethen.">
-    <meta name="author" content="Greg Brethen">
 
-    <title>gbrethen.github.io</title>
+    <title>GBB Creations | responsive portfolio</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <meta name="keywords" content="">
 
-    <!-- Theme CSS -->
-    <link href="styles/freelancer.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Bootstrap and Font Awesome css -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- Theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- Custom stylesheet - for your changes -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- owl carousel css -->
+
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- CSS Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Mordernizr -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <!-- Responsivity for older IE -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <script src="js/respond.min.js"></script>
+<![endif]-->
 </head>
 
-<body id="page-top" class="index">
+<body data-spy="scroll" data-target="#navigation" data-offset="120">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <!-- *** NAVBAR ***
+_________________________________________________________ -->
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img src="images/gbb_logo.png" class="img-responsive" alt="GBB Logo" style="height:80px; width:80px; margin-top:-27px; margin-right:5px; float:left;"/>Creative</a>
+                <a class="navbar-brand scrollTo" href="#intro">GBB Creations</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-collapse collapse" id="navigation">
+
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                    <li class="active"><a href="#intro">Intro</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                    <li><a href="#about">About</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
+                    <li><a href="#services">Services</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+<!--
+                    <li><a href="#testimonials">Testimonials</a>
+                    </li>
+-->
+                    <li><a href="#references">My work</a>
+                    </li>
+                    <!--<li><a href="#customers">Clients</a>
+                    </li>-->
+                    <li><a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+            <!--/.nav-collapse -->
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="images/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Workings of Greg Brethen</span>
-                        <hr class="star-light">
-                        <span class="skills">Web Developer - Programmer - Full Stack</span>
+        </div>
+    </div>
+    <!-- /#navbar -->
+
+    <!-- *** NAVBAR END *** -->
+
+
+    <div id="all">
+
+
+        <!-- *** INTRO IMAGE ***
+_________________________________________________________ -->
+        <div id="intro" class="clearfix">
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        <div class="carousel-caption">
+                            <div data-animate="fadeInDown" class="logo">
+                                <img src="img/logo-big.png" alt="logo" width="130">
+                            </div>
+                            <h1 data-animate="fadeInDown">Hello, and Welcome!</h1>
+                            <h2 data-animate="slideInUp">I grind HTML and CSS and then weld them with .NET, Ruby, or Node.js into beautiful and efficient web applications.</h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/ruby-anagram-app-lg.PNG" class="img-responsive" alt="Ruby on Rails" style="border:10px solid #1d83c1;">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/python-code-lg.png" class="img-responsive" alt="Python w/Tornado" style="border:10px solid #1fa4b6;">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/CentralAdmin-lg.png" class="img-responsive" alt="C#/Razor/MVC w/Angular.JS" style="border:10px solid #ba4c63;">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/BookLibrary-2-lg.png" class="img-responsive" alt="node.js" style="border:10px solid #1037b5;">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/AuthenticateUser-lg.png" class="img-responsive" alt="C#" style="border:10px solid #130f0f;">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/rails-pinning-app-lg.png" class="img-responsive" alt="Ruby on Rails" style="border:10px solid #ccb2a3;">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="images/contact-list-lg.png" class="img-responsive" alt="ASP.NET Web API/Angular" style="border:10px solid #ba4c63;">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- *** INTRO IMAGE END *** -->
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>A tech enthusiast with a passion for creativity, design, and coding full stack from <em>HTML5, CSS(3), and numerous JavaScript frameworks</em>, to <em>node.js, .NET MVC, and Ruby on Rails</em>.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>In general, my specialties include web application development, relational and document-centric data modeling, UI/UX, and web services.  My toolkit includes, but is not limited to, C#, Ruby (Rails and Sinatra), JavaScript (to include JQuery, node and Angular.JS), RESTful APIs, and some Python with Tornado.</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    &nbsp;
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- *** ABOUT ***
+_________________________________________________________ -->
+        <div class="section" id="about">
+            <div class="container">
+                <div class="row">
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="contactForm" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        
-                        <br/>
-                        <div id="success"></div>
+                    <div class="col-sm-12">
+                        <h2 class="title" data-animate="fadeInDown">About me</h2>
+                    </div>
+
+                    <div class="col-sm-12">
+
                         <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+
+                            <div class="col-sm-6 text-left" data-animate="fadeInUp">
+
+                                <p>A tech enthusiast with a passion for creativity, design, and coding full stack from <em>HTML5, CSS(3), and numerous JavaScript frameworks</em>, to <em>node.js, .NET MVC, and Ruby on Rails</em>.</p>
+
+                                <p>In general, my specialties include web application development, relational and document-centric data modeling, UI/UX, and web services.  My toolkit includes, but is not limited to, C#, Ruby (Rails and Sinatra), JavaScript (to include JQuery, Node.js and AngularJS), RESTful APIs, and some Python with Tornado.</p>
+
+                                <p>Currently, I am enhancing my skillset with <b>Angular.IO</b> (2) and <b>SPA</b> (Single Page Applications).</p>
+
+                            </div>
+
+                            <div class="col-sm-6" data-animate="fadeInUp">
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        C#
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                            <span class="sr-only">85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        Ruby
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill4" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+                                            <span class="sr-only">55</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        Node.JS
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+                                            <span class="sr-only">55</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        Javascript
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                            <span class="sr-only">85</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        HTML coding
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                            <span class="sr-only">90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        AngularJS
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Smyrna, TN 37167</p>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="http://themouseintechnology.blogspot.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-rss"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/114411495969980193730" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/gbrethen" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/themouseintechnology" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/gbrethen" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+
+                    <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 mt-big" data-animate="bounceIn">
+                        <img src="img/about.jpg" class="image img-circle img-responsive" alt="This is me - IT worker">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-below">
+        <!-- /#about -->
+
+        <!-- *** ABOUT END *** -->
+
+        <!-- *** SERVICES ***
+_________________________________________________________ -->
+        <div class="section text-gradient" id="services">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; gbb creative 2016
+                <div class="col-md-12">
+                    <h2 class="title" data-animate="fadeInDown">Services</h2>
+
+                    <div class="row services">
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon"><i class="fa fa-search"></i>
+                            </div>
+                            <h3 class="heading">Consulting</h3>
+                            <p>I have a wide range of skills that include front-end development (HTML5, CSS3, Javascript, Bootstrap, AngularJS), back-end development using various technologies (C# .NET, Node.js, and Ruby on Rails), Linux or Microsoft.</p>
+                        </div>
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon"><i class="fa fa-html5"></i>
+                            </div>
+                            <h3 class="heading">HTML coding</h3>
+                            <p>Truth be told, all these technologies are mere tools waiting for a skilled developer to work on the right project.</p>
+                        </div>
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon"><i class="fa fa-tachometer"></i> 
+                            </div>
+                            <h3 class="heading">C#/Ruby/Node.js Web Development</h3>
+                            <p>I am fully immersed in MVC - utilizing technology such as ASP.NET, Ruby on Rails, or Node.js.  I also enjoy building RESTful API's with the above mentioned programming platforms.</p>
+                        </div>
+
                     </div>
+
+                    <hr>
+
+                    <div class="text-center">
+
+                        <p class="lead">Would you like to know more or just discuss something?</p>
+
+                        <p><a href="#contact" class="btn btn-default btn-lg scrollTo">Contact me</a>
+                        </p>
+
+                    </div>
+
                 </div>
+                <!-- /.12 -->
             </div>
+            <!-- /.container -->
         </div>
-    </footer>
+        <!-- /.section -->
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+        <!-- *** SERVICES END *** -->
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
+        <!-- *** TESTIMONIALS ***
+_________________________________________________________ -->
+
+        <!--<div class="section text-gray" id="testimonials" data-animate="fadeInUp">
+
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Anagram Generator</h2>
-                            <hr class="star-primary">
-                            <a href="https://gbrethen-anagram.herokuapp.com/?_sm_au_=iVVJJv4sQkJ1JtkM"><img src="images/ruby-anagram-app-lg.PNG" class="img-responsive img-centered" alt="Ruby on Rails"></a>
-                            <p>Anagrams are words that have the exact same letters but in a different order. Like dog and god. Or Nepal and plane.  This application utilized the Ruby language with Sinatra framework and a PostgreSQL Database. I followed a 3 layer, MVC pattern and used ActiveRecord (Data Modeler) for the ORM.</p>
-                            <ul class="list-inline item-details">
-                                <li>Course:
-                                    <strong><a href="https://gbrethen-anagram.herokuapp.com/?_sm_au_=iVVq0Wtq3kt5rkt6">Skillcrush - Ruby on Rails Developer</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>May 2016</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Ruby Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                <div class="col-md-12">
+
+                    <div class="mb20">
+                        <h2 class="title" data-animate="fadeInUp">My customers said<br /><span>about me</span></h2>
+
+                        <p class="lead text-center" data-animate="fadeInUp">I am always glad to hear that my customers leave satisfied. Some of them shared with you their insights on our cooperation.</p>
+                    </div>
+
+                    <ul class="owl-carousel testimonials same-height-row" data-animate="fadeInUp">
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                                        slightly domed and divided by arches into stiff sections.</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-1.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?
+                                        " he thought. It wasn't a dream.</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-2.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p>
+
+                                    <p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded
+                                        frame.</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-3.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.
+                                        Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
+                                </div>
+
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-4.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial same-height-always">
+                                <div class="text">
+                                    <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.
+                                        Drops of rain could be heard hitting the pane, which made him feel quite sad. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite
+                                        sad.</p>
+                                </div>
+
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="name-picture">
+                                        <img class="" alt="" src="img/person-4.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>-->
+                    <!-- /.owl-carousel -->
+                <!--</div>-->
+                <!-- /.12 -->
+            <!--</div>-->
+            <!-- /.container -->
+
+        <!--</div>-->
+        <!-- /.section -->
+
+        <!-- *** TESTIMONIALS END *** -->
+
+        <!-- *** SHOWCASE ***
+_________________________________________________________ -->
+        <div class="section text-parallax parallax-image1" id="services">
+            <div class="container">
+                <div class="row showcase">
+                    <div class="col-md-6 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-align-justify"></i>
+                            </div>
+                            <h4><span class="counter">32</span><br>
+
+			Web Applications</h4>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Python/Tornado</h2>
-                            <hr class="star-primary">
-                            <img src="images/python-code-lg.png" class="img-responsive img-centered" alt="Python/Tornado">
-                            <p>This simple program was written in Python code.  The objective of this program is to read in a json file and display the nodes in an HTML page.  Tornado was used as the web server (similar to node.js).</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Demo program for interview.</strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2016</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Central Admin</h2>
-                            <hr class="star-primary">
-                            <img src="images/CentralAdmin-xlg.png" class="img-responsive img-centered" alt=".NET MVC/Angular.JS">
-                            <p>This is a tool built using .NET MVC (Razor/C#) and Angular.JS that allowed our support personel to query records viewed by selected employees.  This admin tool also gave support personel the ability to grant/remove access to an older classic ASP application based on roles and contract type.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>naviHealth</strong>
-                                </li>
-                                <li>Date:
-                                    <strong>June 2016</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Application Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Book Library</h2>
-                            <hr class="star-primary">
-                            <img src="images/BookLibrary-xlg.png" class="img-responsive img-centered" alt="node.js">
-                            <p>A Web application built using node.js, express application framework, and ejs template engine.  I used goodread's api to fetch book covers and MongoDB to store book documents.  In this application I also used gulp for automated tasks and mocha for test cases.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Self</strong>
-                                </li>
-                                <li>Date:
-                                    <strong>August 2016</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Application Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Authenticate User</h2>
-                            <hr class="star-primary">
-                            <img src="images/AuthenticateUser-lg.png" class="img-responsive img-centered" alt="C#/DirectoryServices">
-                            <p>A dll I built for Active Directory Authentication.  This dll was written in C#, .NET, and used Directory Services to interact with LDAP.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Multiple</strong>
-                                </li>
-                                <li>Date:
-                                    <strong>January 2013</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>DLL Library</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Pinterest Project</h2>
-                            <hr class="star-primary">
-                            <img src="images/rails-pinning-app-lg.png" class="img-responsive img-centered" alt="Ruby on Rails">
-                            <p>A Web application built with Ruby on Rails in a course I took to learn the Ruby way.  This application uses ActiveRecord ORM with PostgreSQL database backend.  It is based on the popular Pinterest social application.</p>
-                            <ul class="list-inline item-details">
-                                <li>Course:
-                                    <strong><a href="https://gbb-pinning-app.herokuapp.com/login?_sm_au_=iVVq0Wtq3kt5rkt6">Skillcrush - Ruby on Rails Developer</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>May 2016</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Application Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>ASP.NET MVC, Web API, Angular 1.x - SPA</h2>
-                            <hr class="star-primary">
-                            <img src="images/contact-list-lg.png" class="img-responsive img-centered" alt="Web API/AngularJS">
-                            <p>This application was written as a code test for an interview. It utilizes ASP.NET MVC, Web API, and AngularJS 1.x for a Single Page Application.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Demo program for interview.</strong>
-                                </li>
-                                <li>Date:
-                                    <strong>January 2017</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    <!--<div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-users"></i>
+                            </div>
+                            <h4><span class="counter">50</span><br>  
 
-    <!-- jQuery -->
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/jquery.maskedinput.js"></script>
+			Satisfied Clients</h4>
+                        </div>
+                    </div>-->
+                    <div class="col-md-6 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-copy"></i>
+                            </div>
+                            <h4><span class="counter">120</span><br>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="scripts/bootstrap.min.js"></script>
+			Projects</h4>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-font"></i>
+                            </div>
+                            <h4><span class="counter">333</span><br> 
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+			Magazines and Brochures</h4>
+                        </div>
+                    </div>-->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
 
+            <div class="dark-mask"></div>
+
+        </div>
+        <!-- /.section -->
+
+        <!-- *** REFERENCES IMAGE ***
+_________________________________________________________ -->
+        <div class="section" id="references">
+            <div class="container">
+                <div class="col-sm-12">
+
+                    <div class="mb20">
+                        <h2 class="title" data-animate="fadeInUp">My work</h2>
+
+                        <p class="lead" data-animate="fadeInUp">Examples of my work with different technologies.</p>
+                    </div>
+
+                    <ul id="filter" data-animate="fadeInUp">
+                        <li class="active"><a href="#" data-filter="all">All</a>
+                        </li>
+                        <li><a href="#" data-filter="webdesign">Web Applications</a>
+                        </li>
+                        <li><a href="#" data-filter="api">API</a>
+                        </li>
+                        <li><a href="#" data-filter="other">Other</a>
+                        </li>
+                    </ul>
+
+                    <div id="detail">
+
+                        <span class="close">&times;</span> 
+
+                        <div id="detail-slider"></div>
+
+                        <div class="text-center">
+                            <h1 id="detail-title">&nbsp;</h1>
+                        </div>
+
+                        <div id="detail-content"></div>
+
+                    </div>
+                    <!-- Reference detail -->
+
+                    <div id="references-masonry" data-animate="fadeInUp">
+
+                        <div class="reference-item" data-category="api">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-1.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Contact List</h3> 
+                                        <p>A Single Page App (SPA) using Angular & RoR API.</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/portfolio-1-lg.jpg">
+
+                                    <p>ContactList was an application I built as a requirement for an interview.  It is a single page application that utilizes AngularJS 1.x on the front-end, and Ruby on Rails (5) for the RESTful API.  This application stores all information in a JSON file and allows for adding new contacts and removing contacts.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://github.com/gbrethen/ContactList"><i class="fa fa-github"></i> Visit Github</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reference-item" data-category="api">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-2.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Book Library</h3> 
+                                        <p>Node.JS | Express Application Framework | EJS Templating Engine</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/portfolio-2-lg.jpg">
+
+                                    <p>A Web application built using node.js, express application framework, and ejs template engine.  I used goodread's api to fetch book covers and MongoDB to store book documents.  In this application I also used gulp for automated tasks and mocha for test cases.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://github.com/gbrethen/Node-Book-Library"><i class="fa fa-github"></i> Visit Github</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="webdesign">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-3.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Central Admin</h3> 
+                                        <p>ASP.NET MVC Application</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/portfolio-3-lg.jpg">
+
+                                    <p>This is a tool built using .NET MVC (Razor/C#) and Angular.JS that allowed our support personel to query records viewed by selected employees.  This admin tool also gave support personel the ability to grant/remove access to an older classic ASP application based on roles and contract type.</p>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="other">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-4.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Authenticate User</h3> 
+                                        <p>C# .NET / LDAP Utility</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/portfolio-4-lg.jpg">
+
+                                    <p>A dll I built for Active Directory Authentication.  This dll was written in C#, .NET, and used Directory Services to interact with LDAP.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="webdesign">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-5.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Pinning App</h3> 
+                                        <p>Ruby on Rails Pinterest like application.</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/portfolio-5-lg.jpg">
+
+                                    <p>A Web application built with Ruby on Rails in a course I took to learn the Ruby way.  This application uses ActiveRecord ORM with PostgreSQL database backend.  It is based on the popular Pinterest social application.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://gbb-pinning-app.herokuapp.com/login"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="https://github.com/gbrethen/rails-pinning-app"><i class="fa fa-github"></i> Visit Github</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="webdesign">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-6.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Anagram Generator</h3> 
+                                        <p>Ruby with Sinatra framework - Anagram Generator</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/portfolio-6-lg.jpg">
+
+                                    <p>Anagrams are words that have the exact same letters but in a different order. Like dog and god. Or Nepal and plane.  This application utilized the Ruby language with Sinatra framework and a PostgreSQL Database. I followed a 3 layer, MVC pattern and used ActiveRecord (Data Modeler) for the ORM.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://gbrethen-anagram.herokuapp.com/"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="https://github.com/gbrethen/sinatra_apps/tree/master/anagram"><i class="fa fa-github"></i> Visit Github</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="other">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-7.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Python/Tornado</h3> 
+                                        <p>A demonstration app for reading in json file.</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/portfolio-7-lg.jpg">
+
+                                    <p>This simple program was written in Python code.  The objective of this program is to read in a json file and display the nodes in an HTML page.  Tornado was used as the web server (similar to node.js).</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://github.com/gbrethen/Python_Tornado_Simple_Sample"><i class="fa fa-github"></i> Visit Github</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="webdesign">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-8.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Job Finder</h3> 
+                                        <p>AngularLS and Node.JS Application</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/portfolio-8-lg.jpg">
+
+                                    <p>This was an application I built to learn Node.JS.  You can add a new job posting and remove job postings.  I used AngularJS 1.x on the front-end.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://lit-refuge-30256.herokuapp.com/"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="https://github.com/gbrethen/JobFinder"><i class="fa fa-github"></i> Visit Github</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /#references-masonry -->
+
+                </div>
+                <!-- /.12 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** REFERENCES END *** -->
+
+        <!-- *** CUSTOMERS ***
+_________________________________________________________ -->
+
+        <!--<div class="section text-gray" id="customers">
+            <div class="container">
+                <div class="col-md-12">
+
+
+                    <div class="row">
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/customers/kofola.png" title="Kofola" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/customers/evian.png" title="Evian" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/customers/cslink.png" title="CS Link" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/customers/botas66.png" title="Botas 66 Concept store" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/customers/mdfc.png" title="MediaFabríca" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/customers/vanek.png" title="VANĚK Strojírenská výroba" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                    </div>-->
+                    <!-- /.row -->
+
+
+                <!--</div>-->
+                <!-- /.12 -->
+            <!--</div>-->
+            <!-- /.container -->
+        <!--</div>-->
+        <!-- /.section -->
+
+        <!-- *** CUSTOMERS END *** -->
+
+        <!-- *** CONTACT ***
+_________________________________________________________ -->
+
+        <div class="section contact" id="contact" data-animate="bounceIn">
+            <div class="container">
+                <div class="col-md-12">
+
+
+                    <h2 class="title">Contact me</h2>
+
+                    <div class="row">
+
+                        <div class="col-md-8 col-md-offset-2">
+                            <form name="contactForm" id="contactForm" novalidate>
+
+                                <div class="messages">
+
+                                </div>
+
+                                <div class="controls">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                           <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                           <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <input type="submit" class="btn btn-primary btn-lg" value="Send message">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.12 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** CONTACT END *** -->
+
+        <!-- *** MAP ***
+_________________________________________________________ -->
+
+        <div class="section" id="map">
+
+        </div>
+        <!-- /.section -->
+
+        <!-- *** MAP END *** -->
+
+        <!-- *** FOOTER ***
+_________________________________________________________ -->
+
+        <div class="section" id="footer">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+
+                        <p class="social">
+                            <a href="http://themouseintechnology.blogspot.com/" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-fw fa-rss"></i></a>
+                            <a href="https://plus.google.com/114411495969980193730" class="external gplus" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-fw fa-google-plus"></i></a>
+                            <a href="#" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/themouseintechnology" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <a href="https://github.com/gbrethen" class="external gplus" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-fw fa-github"></i></a>
+                        </p>
+                    </div>
+                    <!-- /.6 -->
+
+                    <div class="col-sm-6">
+                        <p>&copy; 2017 GBB Creations. All rights reserved.</p>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <p class="template-bootstrapious">Template by <a href="https://bootstrapious.com/free-templates">Bootstrapious</a></p>
+                        
+                        <!-- Please do not remove the backlink to us, unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** FOOTER END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+    <!-- #### JAVASCRIPT FILES ### -->
+
+    <!-- js base -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- for demo purpose -->
+    <script src="js/jquery.cookie.js"></script>
+
+    <!-- waypoints for scroll spy -->
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/gmaps.js"></script>
+
+    <!-- masonry layout -->
+    <script src="js/masonry.pkgd.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+
+    <!-- jQuery scroll to -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+    <!-- jQuery counter -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- jQuery parallax -->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+
+    <!-- main js file -->
+
+    <script src="js/front.js"></script>
+    
     <!-- Contact Form JavaScript -->
-    <script src="scripts/jqBootstrapValidation.js"></script>
-    <script src="scripts/contact_me.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="scripts/freelancer.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
+
+
+
 </body>
 
 </html>
